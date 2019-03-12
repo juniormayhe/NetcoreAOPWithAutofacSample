@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+    var routes = (List<Checkout.Application.DTO.Route>)ViewData["routes"];
+}
+
+<h3>Routes</h3>
+<table>
+    @foreach (Checkout.Application.DTO.Route item in routes)
+    {
+    <tr>
+        <td>MerchantId: @item.MerchantId</td>
+        <td>LocationId: @item.LocationId</td>
+        <td>EstimatedDelivery: @item.EstimatedDelivery</td>
+    </tr>
+    }
+</table>
