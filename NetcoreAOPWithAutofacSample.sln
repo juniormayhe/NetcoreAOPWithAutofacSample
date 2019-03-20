@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSDK", "ClientSDK\ClientSDK.csproj", "{D0677621-C846-4C8E-B552-18F9026D95CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routing.ClientSDK", "ClientSDK\Routing.ClientSDK.csproj", "{D0677621-C846-4C8E-B552-18F9026D95CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebAPI", "Presentation.WebAPI\Presentation.WebAPI.csproj", "{244329C2-4DF1-4AB4-B0E9-2EBD5FE98F61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routing.Presentation.WebAPI", "Presentation.WebAPI\Routing.Presentation.WebAPI.csproj", "{244329C2-4DF1-4AB4-B0E9-2EBD5FE98F61}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client Checkout", "Client Checkout", "{B9EB44B8-BC6E-4178-AA3F-56F9E5DD1347}"
 EndProject

@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Presentation.WebAPI.DTOs
+﻿namespace Routing.Presentation.WebAPI.DTOs
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class Route
     {
         public int MerchantId { get; set; }

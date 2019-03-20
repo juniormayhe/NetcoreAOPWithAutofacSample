@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Checkout.Data.Services
+﻿namespace Checkout.Data.Services
 {
+    using System.Collections.Generic;
+
     using System.Linq;
 
     public static class RouteDTOMapperExtensions
     {
-        public static List<Checkout.Application.DTO.Route> MapToCheckoutDTO(this List<ClientSDK.DTOs.Route> routesFromClient)
+        public static List<Checkout.Application.DTO.Route> MapToCheckoutDTO(this List<Routing.ClientSDK.DTOs.Route> routesFromClient)
         {
             List<Checkout.Application.DTO.Route> routesForCheckout = routesFromClient
                 .Select(x => new Checkout.Application.DTO.Route

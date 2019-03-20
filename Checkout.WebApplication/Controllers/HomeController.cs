@@ -1,27 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Checkout.WebApplication.Models;
-
-namespace Checkout.WebApplication.Controllers
+﻿namespace Checkout.WebApplication.Controllers
 {
+    using System.Diagnostics;
+    using System.Threading.Tasks;
+
+    using Checkout.WebApplication.Models;
+
     using Data.Services;
+
+    using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : Controller
     {
-        private readonly IRoutingService routingService;
+        private readonly IRoutingGateway _routingGateway;
 
-        public HomeController(IRoutingService routingService)
+        public HomeController(IRoutingGateway routingGateway)
         {
-            this.routingService = routingService;
+            this._routingGateway = routingGateway;
         }
 
         public async Task<IActionResult> Index()
         {
-            var routesFromRoutingClient = await routingService.GetRoutes();
+            var routesFromRoutingClient = await _routingGateway.GetRoutes();
+            ViewData["routes"] = routesFromRoutingClient;
+            return View();
+        }
+
+        public async Task<IActionResult> IndexById(int merchantId)
+        {
+            var routesFromRoutingClient = await _routingGateway.GetRoutesByMerchantId(0, 2);
             ViewData["routes"] = routesFromRoutingClient;
             return View();
         }

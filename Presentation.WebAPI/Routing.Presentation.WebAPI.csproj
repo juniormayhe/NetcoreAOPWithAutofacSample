@@ -12,4 +12,8 @@
     <PackageReference Include="Snappy.NET" Version="1.1.1.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Checkout.Data.Services\Checkout.Data.Services.csproj" />
+  </ItemGroup>
+
 </Project>

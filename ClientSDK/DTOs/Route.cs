@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ClientSDK.DTOs
+﻿namespace Routing.ClientSDK.DTOs
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class Route
     {
         public int MerchantId { get; set; }
