@@ -5,4 +5,4 @@ An approach of adding interceptors in netstandard 2.0.3 project and avoid [confl
 - Autofac.Extensions.DependencyInjection 4.4.0
 - Castle.Core 4.3.1
 
-This sample uses <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" /> but this could cause conflicts with Serializable attributes.
+This sample uses `<PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />` but this could cause conflicts with Serializable attributes.
